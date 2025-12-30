@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Funkcja wymierna – kompendium maturalne</title>
+
+<!-- MathJax -->
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(','\\)'], ['$', '$']] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body style="margin:0;background:#f5f5f5;">
+
+<div style="max-width:1200px;margin:auto;padding:30px;">
+
+<h1 style="text-align:center;">Funkcja wymierna – szkoła średnia</h1>
+
+<!-- SEKCJE -->
+<div id="teoria"></div>
+<div id="aplet"></div>
+<div id="tutorial"></div>
+<div id="zadania"></div>
+<div id="bledy"></div>
+
+</div>
+
+<!-- ŁADOWANIE SEKCJI -->
+<script>
+function loadSection(id, file) {
+  fetch(file)
+    .then(res => res.text())
+    .then(data => document.getElementById(id).innerHTML = data);
+}
+
+loadSection("teoria", "sections/teoria.html");
+loadSection("aplet", "sections/aplet-geogebra.html");
+loadSection("tutorial", "sections/tutorial.html");
+loadSection("zadania", "sections/zadania.html");
+loadSection("bledy", "sections/bledy.html");
+</script>
+
+</body>
+</html>
