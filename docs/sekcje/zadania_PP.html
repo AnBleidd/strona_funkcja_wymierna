@@ -1,3 +1,11 @@
+<!-- MathJax -->
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(','\\)'], ['$', '$']] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 <div style="
 margin-top:40px;
 background:#e3f2fd;
@@ -35,12 +43,11 @@ border-left:8px solid #2e7d32;
 ">
 
 <h3 style="color:#1b5e20;margin-top:0;">
-Matura CKE – maj 2023, poziom podstawowy<br>
-Zadanie 8 (0–1 pkt)
+Matura CKE – maj 2023<br>
+Zadanie 8. (0–1 pkt)
 </h3>
 
 <!-- TREŚĆ ZADANIA -->
-<p><b>Treść zadania</b></p>
 
 <p>
 Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych.
@@ -153,14 +160,242 @@ display:inline-block;
   <summary style="font-weight:bold;cursor:pointer;">
   Czerwiec 2023 – sesja dodatkowa
   </summary>
-  <!-- ZADANIE CZERWIEC 2023 -->
+  <div style="
+margin-top:30px;
+background:#ffffff;
+padding:25px;
+border-radius:12px;
+border-left:8px solid #2e7d32;
+">
+
+<h3 style="color:#1b5e20;margin-top:0;">
+Matura CKE – 2023, czerwiec, poziom podstawowy<br>
+Zadanie 10. (0-1 pkt)
+</h3>
+
+<!-- TREŚĆ ZADANIA (ZAWSZE WIDOCZNA) -->
+<p><b>Treść zadania</b></p>
+
+<p>
+Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych.  
+Równanie 
+\[
+\frac{(x^2 - 3x)(x+2)}{x^2 - 4} = 0
+\] 
+w zbiorze liczb rzeczywistych ma dokładnie:
+</p>
+
+<ul style="list-style-type:upper-alpha;">
+<li>jedno rozwiązanie</li>
+<li>dwa rozwiązania</li>
+<li>trzy rozwiązania</li>
+<li>cztery rozwiązania</li>
+</ul>
+
+<!-- ROZWIJANE ROZWIĄZANIE -->
+<details style="
+margin-top:20px;
+background:#f1f8e9;
+padding:15px;
+border-radius:10px;
+">
+
+<summary style="
+font-weight:bold;
+cursor:pointer;
+color:#33691e;
+">
+Pokaż rozwiązanie
+</summary>
+
+<div style="margin-top:15px;">
+
+<p><b>Rozwiązanie (zgodne z kryteriami oceniania CKE)</b></p>
+
+<p><b>Krok 1. Dziedzina</b></p>
+<p>
+Mamy równanie wymierne, więc musimy wykluczyć wartości, dla których mianownik jest równy zero:
+</p>
+
+<p style="text-align:center;">
+\[
+x^2 - 4 = 0 \implies x = 2 \text{ lub } x = -2
+\]
+</p>
+
+<p>
+Zatem dziedziną równania jest:
+</p>
+
+<p style="text-align:center;">
+\[
+D = \mathbb{R} \setminus \{-2, 2\}
+\]
+</p>
+
+<p><b>Krok 2. Rozwiązanie równania</b></p>
+<p>
+Równanie wymierne jest równe zero wtedy i tylko wtedy, gdy licznik jest równy zero (i liczba należy do dziedziny):
+</p>
+
+<p style="text-align:center;">
+\[
+(x^2 - 3x)(x+2) = 0
+\]
+</p>
+
+<p>
+Rozwiązujemy równanie iloczynowe:
+</p>
+
+<p style="text-align:center;">
+\[
+x^2 - 3x = 0 \quad \text{lub} \quad x + 2 = 0
+\]
+\[
+x(x - 3) = 0 \implies x = 0 \text{ lub } x = 3
+\]
+\[
+x + 2 = 0 \implies x = -2
+\]
+</p>
+
+<p><b>Krok 3. Weryfikacja</b></p>
+<p>
+Sprawdzamy, które z tych rozwiązań należą do dziedziny \(D\):
+\[
+x = 0 \in D, \quad x = 3 \in D, \quad x = -2 \notin D
+\]
+</p>
+
+<p><b>Wniosek</b></p>
+<p>
+Rozwiązania równania w zbiorze liczb rzeczywistych to \(x = 0\) oraz \(x = 3\). Równanie ma dokładnie dwa rozwiązania.
+</p>
+
+<p style="
+background:#e8f5e9;
+padding:10px;
+border-radius:8px;
+display:inline-block;
+">
+<b>Odpowiedź poprawna: B</b>
+</p>
+
+</div>
+</details>
+
+</div>
+<!-- ================= KONIEC ZADANIA ================= -->
   </details>
 
   <details style="margin-top:10px;background:#ffffff;padding:15px;border-radius:10px;">
   <summary style="font-weight:bold;cursor:pointer;">
   Sierpień 2023 – sesja poprawkowa
   </summary>
-  <!-- ZADANIE SIERPIEŃ 2023 -->
+  <!-- ================= ZADANIE MATURALNE – ROZWIJANE ================= -->
+<div style="
+margin-top:30px;
+background:#ffffff;
+padding:25px;
+border-radius:12px;
+border-left:8px solid #2e7d32;
+">
+
+<h3 style="color:#1b5e20;margin-top:0;">
+Matura CKE – 2023, sierpień, poziom podstawowy<br>
+Zadanie 8 (0–1)
+</h3>
+
+<!-- TREŚĆ ZADANIA (ZAWSZE WIDOCZNA) -->
+<p><b>Treść zadania</b></p>
+
+<p>
+Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych.  
+Równanie 
+\[
+\frac{(x^2 - 3x)(x^2 + 1)}{x^2 - 25} = 0
+\] 
+w zbiorze liczb rzeczywistych ma dokładnie:
+</p>
+
+<ul style="list-style-type:upper-alpha;">
+<li>jedno rozwiązanie</li>
+<li>dwa rozwiązania</li>
+<li>trzy rozwiązania</li>
+<li>cztery rozwiązania</li>
+</ul>
+
+<!-- ROZWIJANE ROZWIĄZANIE -->
+<details style="
+margin-top:20px;
+background:#f1f8e9;
+padding:15px;
+border-radius:10px;
+">
+
+<summary style="
+font-weight:bold;
+cursor:pointer;
+color:#33691e;
+">
+Pokaż rozwiązanie
+</summary>
+
+<div style="margin-top:15px;">
+
+<p><b>Rozwiązanie</b></p>
+
+<p><b>Krok 1. Dziedzina</b></p>
+<p>
+Wykluczamy wartości, dla których mianownik jest równy zero:
+</p>
+
+<p style="text-align:center;">
+\[
+x^2 - 25 = 0 \implies x = 5 \text{ lub } x = -5
+\]
+\[
+D = \mathbb{R} \setminus \{-5, 5\}
+\]
+</p>
+
+<p><b>Krok 2. Rozwiązanie równania</b></p>
+<p>
+Równanie jest równe zero, gdy licznik jest równy zero:
+</p>
+
+<p style="text-align:center;">
+\[
+(x^2 - 3x)(x^2 + 1) = 0
+\]
+\[
+x^2 - 3x = 0 \implies x(x - 3) = 0 \implies x = 0 \text{ lub } x = 3
+\]
+\[
+x^2 + 1 = 0 \implies x^2 = -1 \text{ – brak rozwiązań rzeczywistych}
+\]
+</p>
+
+<p><b>Wniosek</b></p>
+<p>
+Rozwiązania równania w zbiorze liczb rzeczywistych to \(x = 0\) i \(x = 3\). Równanie ma dokładnie dwa rozwiązania.
+</p>
+
+<p style="
+background:#e8f5e9;
+padding:10px;
+border-radius:8px;
+display:inline-block;
+">
+<b>Odpowiedź poprawna: B</b>
+</p>
+
+</div>
+</details>
+
+</div>
+<!-- ================= KONIEC ZADANIA ================= -->
   </details>
 
 </div>
@@ -178,18 +413,209 @@ Rok 2024
   <summary style="font-weight:bold;cursor:pointer;">
   Maj 2024 – sesja główna
   </summary>
-  </details>
+  <!-- ================= ZADANIE MATURALNE – ROZWIJANE ================= -->
+<div style="
+margin-top:30px;
+background:#ffffff;
+padding:25px;
+border-radius:12px;
+border-left:8px solid #2e7d32;
+">
 
-  <details style="margin-top:10px;background:#ffffff;padding:15px;border-radius:10px;">
-  <summary style="font-weight:bold;cursor:pointer;">
-  Czerwiec 2024 – sesja dodatkowa
-  </summary>
-  </details>
+<h3 style="color:#1b5e20;margin-top:0;">
+Matura CKE – 2024, maj, poziom podstawowy<br>
+Zadanie 7 (0–1)
+</h3>
+
+<!-- TREŚĆ ZADANIA (ZAWSZE WIDOCZNA) -->
+<p><b>Treść zadania</b></p>
+
+<p>
+Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych.  
+Równanie 
+\[
+\frac{x+1}{(x+2)(x-3)} = 0
+\] 
+w zbiorze liczb rzeczywistych:
+</p>
+
+<ul style="list-style-type:upper-alpha;">
+<li>nie ma rozwiązania</li>
+<li>ma dokładnie jedno rozwiązanie: \(-1\)</li>
+<li>ma dokładnie dwa rozwiązania: \(-2\) oraz 3</li>
+<li>ma dokładnie trzy rozwiązania: \(-1\), \(-2\) oraz 3</li>
+</ul>
+
+<!-- ROZWIJANE ROZWIĄZANIE -->
+<details style="
+margin-top:20px;
+background:#f1f8e9;
+padding:15px;
+border-radius:10px;
+">
+
+<summary style="
+font-weight:bold;
+cursor:pointer;
+color:#33691e;
+">
+Pokaż rozwiązanie
+</summary>
+
+<div style="margin-top:15px;">
+
+<p><b>Rozwiązanie</b></p>
+
+<p><b>Krok 1. Dziedzina</b></p>
+<p>
+Wykluczamy wartości, dla których mianownik jest równy zero:
+</p>
+
+<p style="text-align:center;">
+\[
+(x+2)(x-3) = 0 \implies x = -2 \text{ lub } x = 3
+\]
+\[
+D = \mathbb{R} \setminus \{-2, 3\}
+\]
+</p>
+
+<p><b>Krok 2. Rozwiązanie równania</b></p>
+<p>
+Równanie wymierne jest równe zero, gdy licznik jest równy zero:
+</p>
+
+<p style="text-align:center;">
+\[
+x + 1 = 0 \implies x = -1
+\]
+</p>
+
+<p><b>Wniosek</b></p>
+<p>
+Rozwiązaniem równania w zbiorze liczb rzeczywistych jest \(x = -1\). Równanie ma dokładnie jedno rozwiązanie.
+</p>
+
+<p style="
+background:#e8f5e9;
+padding:10px;
+border-radius:8px;
+display:inline-block;
+">
+<b>Odpowiedź poprawna: B</b>
+</p>
+
+</div>
+</details>
+
+</div>
+<!-- ================= KONIEC ZADANIA ================= -->
+</details>
 
   <details style="margin-top:10px;background:#ffffff;padding:15px;border-radius:10px;">
   <summary style="font-weight:bold;cursor:pointer;">
   Sierpień 2024 – sesja poprawkowa
   </summary>
+  <!-- ================= ZADANIE MATURALNE – ROZWIJANE ================= -->
+<div style="
+margin-top:30px;
+background:#ffffff;
+padding:25px;
+border-radius:12px;
+border-left:8px solid #2e7d32;
+">
+
+<h3 style="color:#1b5e20;margin-top:0;">
+Matura CKE – 2024, sierpień, poziom podstawowy<br>
+Zadanie 6 (0–1)
+</h3>
+
+<!-- TREŚĆ ZADANIA (ZAWSZE WIDOCZNA) -->
+<p><b>Treść zadania</b></p>
+
+<p>
+Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych.  
+Równanie 
+\[
+\frac{x(x+5)(2-x)}{2x+4} = 0
+\] 
+w zbiorze liczb rzeczywistych ma dokładnie:
+</p>
+
+<ul style="list-style-type:upper-alpha;">
+<li>dwa rozwiązania: \(-5\) oraz 2</li>
+<li>dwa rozwiązania: \(-5\) oraz 0</li>
+<li>trzy rozwiązania: \(-5\), 0 oraz 2</li>
+<li>cztery rozwiązania: \(-5\), \(-2\), 0 oraz 2</li>
+</ul>
+
+<!-- ROZWIJANE ROZWIĄZANIE -->
+<details style="
+margin-top:20px;
+background:#f1f8e9;
+padding:15px;
+border-radius:10px;
+">
+
+<summary style="
+font-weight:bold;
+cursor:pointer;
+color:#33691e;
+">
+Pokaż rozwiązanie
+</summary>
+
+<div style="margin-top:15px;">
+
+<p><b>Rozwiązanie</b></p>
+
+<p><b>Krok 1. Dziedzina</b></p>
+<p>
+Wykluczamy wartości, dla których mianownik jest równy zero:
+</p>
+
+<p style="text-align:center;">
+\[
+2x + 4 = 0 \implies x = -2
+\]
+\[
+D = \mathbb{R} \setminus \{-2\}
+\]
+</p>
+
+<p><b>Krok 2. Rozwiązanie równania</b></p>
+<p>
+Równanie wymierne jest równe zero, gdy licznik jest równy zero:
+</p>
+
+<p style="text-align:center;">
+\[
+x(x+5)(2-x) = 0
+\]
+\[
+x = 0, \quad x + 5 = 0 \implies x = -5, \quad 2 - x = 0 \implies x = 2
+\]
+</p>
+
+<p><b>Wniosek</b></p>
+<p>
+Rozwiązania w dziedzinie to \(x = -5\), \(x = 0\) oraz \(x = 2\). Równanie ma dokładnie trzy rozwiązania.
+</p>
+
+<p style="
+background:#e8f5e9;
+padding:10px;
+border-radius:8px;
+display:inline-block;
+">
+<b>Odpowiedź poprawna: C</b>
+</p>
+
+</div>
+</details>
+
+</div>
+<!-- ================= KONIEC ZADANIA ================= -->
   </details>
 
 </div>
@@ -205,20 +631,130 @@ Rok 2025
 
   <details style="margin-top:10px;background:#ffffff;padding:15px;border-radius:10px;">
   <summary style="font-weight:bold;cursor:pointer;">
-  Maj 2025 – sesja główna
-  </summary>
-  </details>
-
-  <details style="margin-top:10px;background:#ffffff;padding:15px;border-radius:10px;">
-  <summary style="font-weight:bold;cursor:pointer;">
-  Czerwiec 2025 – sesja dodatkowa
-  </summary>
-  </details>
-
-  <details style="margin-top:10px;background:#ffffff;padding:15px;border-radius:10px;">
-  <summary style="font-weight:bold;cursor:pointer;">
   Sierpień 2025 – sesja poprawkowa
   </summary>
+  <!-- ================= ZADANIE MATURALNE – ROZWIJANE ================= -->
+<div style="
+margin-top:30px;
+background:#ffffff;
+padding:25px;
+border-radius:12px;
+border-left:8px solid #2e7d32;
+">
+
+<h3 style="color:#1b5e20;margin-top:0;">
+Matura CKE – 2025, sierpień, poziom podstawowy<br>
+Zadanie 8 (0–3)
+</h3>
+
+<!-- TREŚĆ ZADANIA (ZAWSZE WIDOCZNA) -->
+<p><b>Treść zadania</b></p>
+
+<p>
+Dane jest równanie  
+\[
+\frac{3}{3x - 7} = \frac{5x}{x - 8}, \quad x \neq \frac{7}{3}, \; x \neq 8
+\]  
+Wyznacz wszystkie rozwiązania tego równania należące do przedziału \((\frac{5}{4}, +\infty)\). Zapisz obliczenia.
+</p>
+
+<!-- ROZWIJANE ROZWIĄZANIE -->
+<details style="
+margin-top:20px;
+background:#f1f8e9;
+padding:15px;
+border-radius:10px;
+">
+
+<summary style="
+font-weight:bold;
+cursor:pointer;
+color:#33691e;
+">
+Pokaż rozwiązanie
+</summary>
+
+<div style="margin-top:15px;">
+
+<p><b>Rozwiązanie</b></p>
+
+<p><b>Krok 1. Dziedzina</b></p>
+<p>
+Podano ograniczenia: \(x \neq \frac{7}{3}\) oraz \(x \neq 8\). Zatem dziedziną równania jest:
+</p>
+
+<p style="text-align:center;">
+\[
+D = \mathbb{R} \setminus \left\{\frac{7}{3}, 8\right\}
+\]
+</p>
+
+<p><b>Krok 2. Przekształcenie równania</b></p>
+<p>
+Mnożymy obustronnie przez \((3x-7)(x-8)\) (dopuszczalne dla \(x \in D\)):
+</p>
+
+<p style="text-align:center;">
+\[
+3(x - 8) = 5x(3x - 7)
+\]
+\[
+3x - 24 = 15x^2 - 35x
+\]
+\[
+0 = 15x^2 - 35x - 3x + 24
+\]
+\[
+15x^2 - 38x + 24 = 0
+\]
+</p>
+
+<p><b>Krok 3. Rozwiązanie równania kwadratowego</b></p>
+<p>
+Delta:
+</p>
+
+<p style="text-align:center;">
+\[
+\Delta = (-38)^2 - 4 \cdot 15 \cdot 24 = 1444 - 1440 = 4
+\]
+\[
+x = \frac{38 \pm \sqrt{4}}{2 \cdot 15} = \frac{38 \pm 2}{30}
+\]
+\[
+x_1 = \frac{40}{30} = \frac{4}{3}, \quad x_2 = \frac{36}{30} = \frac{6}{5}
+\]
+</p>
+
+<p><b>Krok 4. Sprawdzenie przedziału i dziedziny</b></p>
+<p>
+Sprawdzamy, które rozwiązania należą do przedziału \((\frac{5}{4}, +\infty)\):  
+\(\frac{4}{3} \approx 1.333 < \frac{5}{4} = 1.25\) ❌ – należy poprawić kolejność:  
+
+\(\frac{6}{5} = 1.2 < 1.25\) ❌, \(\frac{4}{3} \approx 1.333 > 1.25\) ✔  
+
+Oba rozwiązania należą do dziedziny, żadne nie jest równe \(\frac{7}{3}\) ani 8.
+</p>
+
+<p><b>Wniosek</b></p>
+<p>
+Rozwiązaniem równania w przedziale \((\frac{5}{4}, +\infty)\) jest:
+</p>
+
+<p style="
+background:#e8f5e9;
+padding:10px;
+border-radius:8px;
+display:inline-block;
+">
+<b>x = \(\frac{4}{3}\)</b>
+</p>
+
+</div>
+</details>
+
+</div>
+<!-- ================= KONIEC ZADANIA ================= -->
   </details>
 
 </div>
