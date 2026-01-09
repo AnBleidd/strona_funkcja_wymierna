@@ -4,12 +4,18 @@
 <meta charset="UTF-8">
 <title>Funkcja wymierna – kompendium maturalne</title>
 
-<!-- MathJax -->
 <script>
 window.MathJax = {
-  tex: { inlineMath: [['\\(','\\)'], ['$', '$']] }
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  startup: {
+    typeset: false   // wyłączamy auto-render
+  }
 };
 </script>
+
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
@@ -31,8 +37,24 @@ window.MathJax = {
 <script>
 function loadSection(id, file) {
   fetch(file)
-    .then(res => res.text())
-    .then(data => document.getElementById(id).innerHTML = data);
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("HTTP " + response.status);
+      }
+      return response.text();
+    })
+    .then(html => {
+      const container = document.getElementById(id);
+      container.innerHTML = html;
+
+      // JEDYNA LINIJKA, KTÓRA RENDERUJE WZORY
+      if (window.MathJax && MathJax.typesetPromise) {
+        MathJax.typesetPromise([container]);
+      }
+    })
+    .catch(error => {
+      console.error("Błąd ładowania sekcji:", file, error);
+    });
 }
 
 loadSection("teoria_aplet", "sections/teoria_aplet.html");
