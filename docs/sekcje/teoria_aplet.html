@@ -1,3 +1,12 @@
+<!-- MathJax -->
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(','\\)'], ['$', '$']] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
 <!-- DEFINICJA -->
 <div style="margin-top:35px;background:white;padding:25px;border-radius:12px;">
 <h2 style="color:#1a237e;">1. Definicja funkcji wymiernej</h2>
@@ -38,13 +47,12 @@ dla których mianownik nie przyjmuje wartości zero.
 
 <p><b>Schemat maturalny:</b></p>
 <ol>
-<li>Przyrównać mianownik do zera</li>
-<li>Wyznaczyć wartości niedozwolone</li>
+<li>Rozwiązać równanie: \( M(x)\neq 0 \) </li>
 <li>Zapisać dziedzinę</li>
 </ol>
 
 <p style="text-align:center;">
-\( x+2=0 \Rightarrow x=-2 \)
+\( x+2\neq 0 \ \Rightarrow x\neq -2 \)
 </p>
 
 <p>
@@ -156,16 +164,16 @@ border-radius:10px;
 border:2px solid #4527a0;
 ">
 
-<iframe
-title="Funkcja wymierna – GeoGebra"
-src="https://www.geogebra.org/material/iframe/id/tbntheqq/width/1440/height/638/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
-width="100%"
-height="550"
-style="border:0;"
+
+<iframe 
+scrolling="no" title="Funkcja Wymierna" src="https://www.geogebra.org/material/iframe/id/ngrWf26F/width/1586/height/720/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" 
+width="1586px" 
+height="720px" 
+style="border:0px;" 
 allowfullscreen
 webkitallowfullscreen
-mozallowfullscreen>
-</iframe>
+mozallowfullscreen></iframe>
+
 
 </div>
 
@@ -186,5 +194,194 @@ mozallowfullscreen>
 </div>
 
 </div>
+
+<!-- ================= FUNKCJA HOMOGRAFICZNA ================= -->
+<section style="
+max-width:1000px;
+margin:40px auto;
+padding:30px;
+background:#ffffff;
+border-radius:14px;
+box-shadow:0 4px 14px rgba(0,0,0,0.08);
+border-top:10px solid #c62828;
+">
+
+<h2 style="color:#b71c1c;margin-top:0;">
+Funkcja homograficzna
+</h2>
+
+<p>
+<b>Funkcja homograficzna</b> to szczególny przypadek funkcji wymiernej,
+opisywany wzorem:
+</p>
+
+<p style="text-align:center;font-size:18px;">
+\[
+f(x)=\frac{ax+b}{cx+d}, \quad c \neq 0
+\]
+</p>
+
+<p>
+Jest to funkcja, której wykres ma postać <b>hiperboli</b>.
+Zagadnienia związane z funkcją homograficzną często pojawiają się
+na maturze – zarówno na poziomie podstawowym, jak i rozszerzonym.
+</p>
+
+<hr style="margin:25px 0;">
+
+<h3 style="color:#c62828;">
+Postać kanoniczna funkcji homograficznej
+</h3>
+
+<p>
+Na maturze bardzo często wymagane jest przejście z postaci ogólnej
+do <b>postaci kanonicznej</b>, która ułatwia:
+</p>
+
+<ul>
+<li>odczyt asymptot,</li>
+<li>rysowanie wykresu,</li>
+<li>analizę przesunięć wykresu.</li>
+</ul>
+
+<p>
+Postać kanoniczna funkcji homograficznej ma postać:
+</p>
+
+<p style="text-align:center;font-size:18px;">
+\[
+f(x)=\frac{a}{x-p}+q
+\]
+</p>
+
+<p>
+gdzie:
+</p>
+
+<ul>
+<li>\(x=p\) — asymptota pionowa,</li>
+<li>\(y=q\) — asymptota pozioma.</li>
+</ul>
+
+<hr style="margin:25px 0;">
+
+<h3 style="color:#c62828;">
+Poradnik: jak zamienić postać ogólną na kanoniczną
+</h3>
+
+<div style="
+background:#ffebee;
+padding:20px;
+border-radius:12px;
+">
+
+<p><b>Krok 1. Zapisz funkcję w postaci ogólnej</b></p>
+
+<p style="text-align:center;">
+\[
+f(x)=\frac{ax+b}{cx+d}
+\]
+</p>
+
+<p><b>Krok 2. Wyłącz współczynnik przy \(x\) w mianowniku</b></p>
+
+<p>
+Zapisz mianownik w postaci:
+</p>
+
+<p style="text-align:center;">
+\[
+cx+d=c\left(x+\frac{d}{c}\right)
+\]
+</p>
+
+<p><b>Krok 3. Rozbij ułamek</b></p>
+
+<p>
+Dążymy do rozbicia licznika tak, aby pojawił się wyraz \(x+\frac{d}{c}\).
+</p>
+
+<p>
+Po odpowiednich przekształceniach otrzymujemy postać:
+</p>
+
+<p style="text-align:center;">
+\[
+f(x)=\frac{a}{c}\cdot\frac{1}{x+\frac{d}{c}}+\left(\frac{b}{c}-\frac{ad}{c^2}\right)
+\]
+</p>
+
+<p><b>Krok 4. Odczytaj postać kanoniczną</b></p>
+
+<p style="text-align:center;">
+\[
+f(x)=\frac{A}{x-p}+q
+\]
+</p>
+
+<p>
+gdzie:
+</p>
+
+<ul>
+<li>\(p=-\frac{d}{c}\),</li>
+<li>\(q=\frac{b}{c}-\frac{ad}{c^2}\).</li>
+</ul>
+
+</div>
+
+<hr style="margin:25px 0;">
+
+<h3 style="color:#c62828;">
+Wskazówki maturalne (CKE)
+</h3>
+
+<ul>
+<li>najpierw wyznacz asymptoty, dopiero potem rysuj wykres,</li>
+<li>zawsze sprawdź, czy mianownik nie zeruje się dla danego \(x\),</li>
+<li>postać kanoniczna ułatwia szybkie szkicowanie wykresu,</li>
+<li>na maturze często punkt przecięcia asymptot jest środkiem symetrii wykresu.</li>
+</ul>
+
+</div>
+
+</section>
+
+<div style="
+margin-top:40px;
+background:#ede7f6;
+padding:25px;
+border-radius:12px;
+">
+
+<h2 style="color:#4527a0;margin-top:0;">
+Interaktywny aplet GeoGebry – funkcja homograficzna
+</h2>
+
+<!-- OPRAWKA iframe -->
+<div style="
+position:relative;
+width:100%;
+overflow:hidden;
+border-radius:10px;
+border:2px solid #4527a0;
+">
+
+
+<iframe 
+scrolling="no" title="Funkcja homograficzna" src="https://www.geogebra.org/material/iframe/id/pgXJP2sc/width/1890/height/855/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" 
+width="1890px" 
+height="855px" 
+style="border:0px;"
+allowfullscreen
+webkitallowfullscreen
+mozallowfullscreen></iframe>
+
+
+</div>
+
+</div>
+<!-- ================= KONIEC SEKCJI ================= -->
+
 </body>
 </html>
