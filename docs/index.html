@@ -20,11 +20,10 @@ window.MathJax = {
 <h1 style="text-align:center;">Funkcja wymierna – szkoła średnia</h1>
 
 <!-- SEKCJE -->
-<div id="teoria"></div>
-<div id="aplet"></div>
-<div id="tutorial"></div>
-<div id="zadania"></div>
-<div id="bledy"></div>
+<div id="teoria_aplet"></div>
+<div id="zadania_PP"></div>
+<div id="zadania_PR"></div>
+<div id="zadania_dodatkowe"></div>
 
 </div>
 
@@ -36,11 +35,10 @@ function loadSection(id, file) {
     .then(data => document.getElementById(id).innerHTML = data);
 }
 
-loadSection("teoria", "sections/teoria.html");
-loadSection("aplet", "sections/aplet-geogebra.html");
-loadSection("tutorial", "sections/tutorial.html");
-loadSection("zadania", "sections/zadania.html");
-loadSection("bledy", "sections/bledy.html");
+loadSection("teoria_aplet", "sekcje/teoria_aplet.html");
+loadSection("zadania_PP", "sekcje/zadania_PP.html" );
+loadSection("zadania_PR", "sekcje/zadania_PR.html");
+loadSection("zadania_dodatkowe", "sekcje/zadania_dodatkowe.html");
 </script>
 
 </body>
